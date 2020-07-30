@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bril'Lounge</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <style>
+    *{
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        font-family: 'Brandon Printed Two';
+    }
+    .contact-us {
+        background-image: linear-gradient(#792614, #DB4523, #F24C27);
+        text-align: center;
+        padding: 100px 0px;
+        text-shadow: 0 0 6px black;
+    }
+
+    .contact-us > h1 {
+        margin-bottom: 20px;
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+
+    .contact-us > p {
+        padding: 0.5em;
+        font-family: 'Sora', sans-serif;
+    }
+
+    .footer-page{
+        background-color: #333333;
+        padding: 1em 6em 1em 6em;
+    }
+
+    .footerContent{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footerContent > div{
+        display: flex;
+        flex-direction: column;
+        padding: 3.5em 4em 3.5em 0;
+    }
+
+    .footerContent > div > h3{
+        font-weight: lighter;
+        margin-top: -.4em;
+        padding-bottom: 1em;
+    }
+
+    .footerContent > div > a{
+        padding: 0 0 0.5em 0.2em;
+        font-weight: lighter;
+        text-decoration: none;
+        font-family: 'Sora', sans-serif;
+    }
+
+    .footerContent > div > a:hover{
+        color: #F24C27;
+    }
+
+    .footerContent > div > p{
+        font-family: 'Sora', sans-serif;
+        padding-right: 18em;
+    }
+
+    .footerContent > div > .contact > a{
+        color: white;
+        font-size: 15px;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: .6em .8em .6em .8em;
+        margin: .2em;
+    }
+
+    .footerContent > div > .contact > a:hover{
+        background-color: #F24C27;
+    }
+
+    .footerLine {
+        margin-top: -.6em;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+
+    .footer-page > p{
+        font-family: 'Sora', sans-serif;
+        font-size: 14px;
+        padding: 2em 4em .5em 4em;
+    }
+    </style>
+</head>
+<body>
+    <section class="contact-us">
+        <h1>contact us</h1>
+        <p>brilounge.desset@gmail.com </p>
+        <p>(021) 5678789 / +62 812 3456 7889</p>
+    </section>
+    <section class="footer-page">
+        <div class="footerContent">
+            <div>
+                <h3>PRODUCT</h3>
+                <a href="">Bread</a>
+                <a href="">Coffee</a>
+                <a href="">Cake</a>
+            </div>
+            <div>
+                <h3>COMPANY</h3>
+                <a href="">About Us</a>
+                <a href="">Contact</a>
+            </div>
+            <div>
+                <h3>LOCATION</h3>
+                <p>Jl. Kebon Jeruk Raya, <br>
+                    Jakarta Barat</p>
+            </div>
+            <div>
+                <h3>SOCIAL MEDIA</h3>
+                <div class="contact">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footerLine"></div>
+        <p>Copyright © 2020 Brilounge, Inc. All rights reserved.</p>
+    </section>
+</body>
+</html>
