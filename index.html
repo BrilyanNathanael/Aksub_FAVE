@@ -6,19 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bril'Lounge</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script type="text/javascript">
+        $(window).scroll( function () {
+            var scroll = $(window).scrollTop();
+            if( scroll > 150 ){
+                $('#nav').addClass("bg-black");
+            }
+            else{
+                $('#nav').removeClass("bg-black");
+            }
+
+            if( scroll < 728 ){//angkanya tergantung besar pagenya
+                $('#home').addClass("active");
+                $('#menu').removeClass("active");
+                $('#contact').removeClass("active");
+            }
+            else if( scroll > 728 ){//tambahin besar px page
+                $('#home').removeClass("active");
+                $('#menu').addClass("active");
+                $('#contact').removeClass("active");
+            }
+            else{//tambahin besar px page
+                $('#home').removeClass("active");
+                $('#menu').removeClass("active");
+                $('#contact').addClass("active");
+            }
+        })
+    </script>
+    
 </head>
 
 <body>
 
-    <div class="nav-bar">
+    <div class="nav-bar" id="nav">
         <div class="logo">
             <img src="Asset/Logo.png" alt="">
         </div>
         <div class="content">
             <ul>
-                <a href="#">Home</a>
-                <a href="#">Our Menu</a>
-                <a href="#">Contact</a>
+                <a href="#" id="home" class="active">Home</a>
+                <a href="#" id="menu">Our Menu</a>
+                <a href="#" id="contact">Contact</a>
             </ul>
         </div>
         <div class="cart-account">

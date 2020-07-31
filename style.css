@@ -32,6 +32,15 @@
     color: #F24C27;
 }
 
+.active {
+    color: #F24C27;
+}
+
+.bg-black{
+    transition: 0.5s;
+    background-color: black;
+}
+
 .cart-account a {
     font-family: 'Sora';
     text-decoration: none;
@@ -91,7 +100,8 @@
 }
 
 .about-us {
-    background-image: linear-gradient(#792614, #DB4523, #F24C27);
+    background: rgb(121, 38, 20);
+    background: linear-gradient(180deg, rgba(121, 38, 20, 1) 0%, rgba(174, 55, 28, 1) 8%, rgba(212, 67, 34, 1) 18%, rgba(242, 76, 39, 1) 35%);
     text-align: center;
     padding: 100px 0px;
     text-shadow: 0 0 6px black;
