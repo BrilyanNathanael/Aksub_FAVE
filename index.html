@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bril'Lounge</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="fontawesome/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -13,6 +16,39 @@
 </head>
 
 <body>
+    <div class="nav-bar" id="nav">
+        <div class="logo">
+            <img src="Asset/Logo.png" alt="">
+        </div>
+        <div class="content">
+            <ul>
+                <a href="#" id="home" class="active">Home</a>
+                <a href="#" id="menu">Our Menu</a>
+                <a href="#" id="contact">Contact</a>
+            </ul>
+        </div>
+        <div class="cart-account">
+            <a href="#"><img src="Asset/cart.png" alt=""></a>
+            <a href="#">My Account</a>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <div class="intro">
+            <p>Group 2<br>Present's</p>
+            <h1><span>Bril</span>'ounge</h1>
+            <h2>Dessert House</h2>
+        </div>
+        <img class="hero-img" src="Asset/Rectangle 14.png" alt="">
+    </div>
+
+    <div class="about-us">
+        <h1>About Us</h1>
+        <p>We start a business just because we remember our friend,<br>
+            his name is Brilyan Natanael. He likes to eat bread and <br>
+            drink a cup of coffee for his Breakfast. </p>
+    </div>
+    
     <section class="menu">
         <h1>Menu</h1>
         <div class="menu-list">
@@ -306,7 +342,37 @@
         <div class="footerLine"></div>
         <p>Copyright © 2020 Brilounge, Inc. All rights reserved.</p>
     </section>
+  
+      <script type="text/javascript">
+        $(window).scroll( function () {
+            var scroll = $(window).scrollTop();
+            if( scroll > 150 ){
+                $('#nav').addClass("bg-black");
+            }
+            else{
+                $('#nav').removeClass("bg-black");
+            }
+
+            if( scroll < 728 ){//angkanya tergantung besar pagenya
+                $('#home').addClass("active");
+                $('#menu').removeClass("active");
+                $('#contact').removeClass("active");
+            }
+            else if( scroll > 728 ){//tambahin besar px page
+                $('#home').removeClass("active");
+                $('#menu').addClass("active");
+                $('#contact').removeClass("active");
+            }
+            else{//tambahin besar px page
+                $('#home').removeClass("active");
+                $('#menu').removeClass("active");
+                $('#contact').addClass("active");
+            }
+        })
+    </script>
+
 </body>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
