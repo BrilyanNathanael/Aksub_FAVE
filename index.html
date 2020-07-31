@@ -23,13 +23,13 @@
         <div class="content">
             <ul>
                 <a href="#" id="home" class="active">Home</a>
-                <a href="#" id="menu">Our Menu</a>
-                <a href="#" id="contact">Contact</a>
+                <a href="#menu-bar" id="menu">Our Menu</a>
+                <a href="#contact-us" id="contact">Contact</a>
             </ul>
         </div>
         <div class="cart-account">
             <a href="#"><img src="Asset/cart.png" alt=""></a>
-            <a href="#">My Account</a>
+            <a href="../Aksub_FAVE/Login Page/login.html">Sign In</a>
         </div>
     </div>
 
@@ -39,17 +39,16 @@
             <h1><span>Bril</span>'ounge</h1>
             <h2>Dessert House</h2>
         </div>
-        <img class="hero-img" src="Asset/Rectangle 14.png" alt="">
     </div>
 
     <div class="about-us">
         <h1>About Us</h1>
-        <p>We start a business just because we remember our friend,<br>
-            his name is Brilyan Natanael. He likes to eat bread and <br>
-            drink a cup of coffee for his Breakfast. </p>
+        <p>Brilounge is an online store that sells a variety of breads and cakes.<br>
+            Not only that, Brilounge also provides the right coffee to eat together with bread or cakes,<br>
+            Then, Brilounge is the right choice of online store for you to relax or do activities.<br>
     </div>
     
-    <section class="menu">
+    <section class="menu" id="menu-bar">
         <h1>Menu</h1>
         <div class="menu-list">
             <h3>- BREAD'S</h3>
@@ -307,7 +306,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-us">
+    <section class="contact-us" id="contact-us">
         <h1>contact us</h1>
         <p>brilounge.desset@gmail.com </p>
         <p>(021) 5678789 / +62 812 3456 7889</p>
@@ -353,17 +352,17 @@
                 $('#nav').removeClass("bg-black");
             }
 
-            if( scroll < 728 ){//angkanya tergantung besar pagenya
+            if( scroll < 1000 ){//angkanya tergantung besar pagenya
                 $('#home').addClass("active");
                 $('#menu').removeClass("active");
                 $('#contact').removeClass("active");
             }
-            else if( scroll > 728 ){//tambahin besar px page
+            else if( scroll > 1000 && scroll < 2800){//tambahin besar px page
                 $('#home').removeClass("active");
                 $('#menu').addClass("active");
                 $('#contact').removeClass("active");
             }
-            else{//tambahin besar px page
+            else if( scroll > 2800 ){//tambahin besar px page
                 $('#home').removeClass("active");
                 $('#menu').removeClass("active");
                 $('#contact').addClass("active");

@@ -75,7 +75,7 @@ input:focus{
 
 .input-form{
     width: 90%;
-    background-color: white;
+    background-color: #DFDFDF;
     border: 0px solid #333333;
     padding: 13px 17px;
     border-radius: 10px;
@@ -88,6 +88,10 @@ input:focus{
 ::-webkit-input-placeholder {
     opacity: 0.5;
 }
+
+input:focus::placeholder {
+    color: transparent;
+  }
 
 .login-form p {
     background-color: #333333;

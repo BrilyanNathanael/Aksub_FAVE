@@ -3,6 +3,7 @@
     padding: 0;
     color: white;
     font-family: 'Brandon Printed Two';
+    scroll-behavior: smooth;
 }
 
 .nav-bar {
@@ -60,24 +61,17 @@
 }
 
 .hero-section {
-    background-image: url('Asset/Home.png');
+    background-image: url('Asset/Home.jpg');
     background-size: cover;
     height: 768px;
     position: relative;
 }
 
-.hero-img {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 768px;
-}
-
-.intro{
-    position: absolute;
-    top: 213px;
-    left: 382px;
-    right: 382px;
+.intro {
+    padding-top: 213px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -105,7 +99,6 @@
     text-align: center;
     padding: 100px 0px;
     text-shadow: 0 0 6px black;
-    height: 10000px;
 }
 
 .about-us h1 {
