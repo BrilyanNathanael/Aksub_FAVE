@@ -7,34 +7,6 @@
     <title>Bril'Lounge</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-
-    <script type="text/javascript">
-        $(window).scroll( function () {
-            var scroll = $(window).scrollTop();
-            if( scroll > 150 ){
-                $('#nav').addClass("bg-black");
-            }
-            else{
-                $('#nav').removeClass("bg-black");
-            }
-
-            if( scroll < 728 ){//angkanya tergantung besar pagenya
-                $('#home').addClass("active");
-                $('#menu').removeClass("active");
-                $('#contact').removeClass("active");
-            }
-            else if( scroll > 728 ){//tambahin besar px page
-                $('#home').removeClass("active");
-                $('#menu').addClass("active");
-                $('#contact').removeClass("active");
-            }
-            else{//tambahin besar px page
-                $('#home').removeClass("active");
-                $('#menu').removeClass("active");
-                $('#contact').addClass("active");
-            }
-        })
-    </script>
     
 </head>
 
@@ -73,6 +45,33 @@
             drink a cup of coffee for his Breakfast. </p>
     </div>
 
+    <script type="text/javascript">
+        $(window).scroll( function () {
+            var scroll = $(window).scrollTop();
+            if( scroll > 150 ){
+                $('#nav').addClass("bg-black");
+            }
+            else{
+                $('#nav').removeClass("bg-black");
+            }
+
+            if( scroll < 728 ){//angkanya tergantung besar pagenya
+                $('#home').addClass("active");
+                $('#menu').removeClass("active");
+                $('#contact').removeClass("active");
+            }
+            else if( scroll > 728 ){//tambahin besar px page
+                $('#home').removeClass("active");
+                $('#menu').addClass("active");
+                $('#contact').removeClass("active");
+            }
+            else{//tambahin besar px page
+                $('#home').removeClass("active");
+                $('#menu').removeClass("active");
+                $('#contact').addClass("active");
+            }
+        })
+    </script>
 
 </body>
 
