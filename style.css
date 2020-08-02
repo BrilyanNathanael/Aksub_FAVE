@@ -110,3 +110,151 @@
     font-family: 'Sora';
     font-weight: 300;
 }
+
+.specialOffer_page {
+    padding-top: 4em;
+    padding-bottom: 10em;
+    background-color: black;
+    font-family: 'Brandon Printed Two Shadow';
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    justify-items: stretch;
+    text-shadow: 0 3px 6px black;
+}
+
+.specialOffer_page .specialBread {
+    display: flex;
+    flex-direction: row;
+}
+
+.specialOffer_page .specialBread img {
+    width: 45%;
+    height: auto;
+    padding-left: 6em;
+    padding-right: 8em;
+}
+
+.specialBread h1 {
+    position: absolute;
+    font-size: 96px;
+    padding: 4.2em 2em 0 4.1em;
+    margin-left: .8em;
+}
+
+.specialCoffee {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5em;
+    padding-left: 6em;
+}
+
+.specialCoffee img {
+    width: 45%;
+    height: auto;
+    padding-left: 11em;
+}
+
+.specialCoffee h1 {
+    text-align: right;
+    position: absolute;
+    font-size: 96px;
+    padding: 4.2em 0 0 3.8em;
+    margin-right: 8em;
+    margin-top: 1.2em;
+}
+
+.offerDetail h3 {
+    position: absolute;
+    font-size: 36px;
+    padding-left: 1em;
+}
+
+.priceDetail {
+    font-family: 'Brandon Printed Two';
+    background-color: #F24C27;
+    padding: 4em 9em 4em 3em;
+    margin-top: 1.5em;
+}
+
+.priceDetail p {
+    font-size: 32px;
+    font-family: 'Sora', sans-serif;
+}
+
+.priceDetail .price {
+    display: flex;
+    flex-direction: row;
+}
+
+.priceDetail .price h2 {
+    font-size: 48px;
+}
+
+.line {
+    margin-top: 1.8em;
+    margin-left: -.5em;
+    width: 12%;
+    height: 5px;
+    transform: rotate(-6deg);
+    background-color: white;
+    position: absolute;
+}
+
+.priceDetail .price h4 {
+    padding-top: .5em;
+    padding-left: 1em;
+    font-size: 24px;
+}
+
+.offerDetail button {
+    border: 1px;
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    padding: .8em 2em .8em 2em;
+    box-shadow: 0 0 12px black;
+    margin-top: -1.5em;
+    margin-left: 14em;
+    transition: .2s;
+}
+
+.offerDetail button:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+.specialCake {
+    padding-top: 14em;
+    display: flex;
+    flex-direction: row;
+}
+
+.specialCake img {
+    width: 65%;
+    height: auto;
+    padding-left: 10em;
+}
+
+.specialCake h1 {
+    position: absolute;
+    font-size: 96px;
+    padding: 2em 8em 0 1em;
+    margin-left: .8em;
+}
+
+.specialCake .offerDetail {
+    position: absolute;
+    margin-top: 18.5em;
+    margin-left: 51.9em;
+}
+
+.specialCake .offerDetail .line {
+    margin-top: 1.8em;
+    margin-left: -.5em;
+    width: 42%;
+    height: 5px;
+    transform: rotate(-6deg);
+    background-color: white;
+    position: absolute;
+}
