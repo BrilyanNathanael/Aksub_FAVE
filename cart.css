@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    padding: 20px 80px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.content a {
+    text-decoration: none;
+    padding: 0px 36px;
+    font-family: 'Sora',sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    transition: 0.5s;
+    color: white;
+}
+
+.content a:hover{
+    transition: 0.5s;
+    color: #F24C27;
+}
+
+.cart-account a {
+    font-family: 'Sora',sans-serif;
+    text-decoration: none;
+    padding-left: 19px;
+    font-weight: bold;
+    vertical-align: middle;
+    transition: 0.5s;
+    color: white;
+}
+
+.cart-account a:hover {
+    color: #F24C27;
+}
+
+.cart-account a img {
+    width: 28px;
+    height: 25px;
+}
+
+.cartPage {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 5em 60px 5em;
+    border: 0px solid #333333;
+    border-radius: 10px;
+    padding-top: 30px;
+    background-color: #333333;
+}
+
+.itemCart{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0 1em 1em;
+}
+
+.itemDetail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .1em 0 2em 2em;
+}
+
+.itemDetail img{
+    border-radius: 10%;
+    height: auto;
+    width: 12%;
+}
+
+.priceDetail{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+}
+
+.priceDetail h1{
+    font-size: 32px;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+#specialPrice {
+    color: #F24C27;
+    padding-left: 1em;
+}
+
+.line {
+    margin-top: .8em;
+    margin-left: -.2em;
+    width: 6.5%;
+    height: 1px;
+    background-color: #F24C27;
+    position: absolute;
+}
+
+.itemDetail .input-group{
+    width: 38%;
+    padding-left: 7em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.itemDetail .btn{
+    border: none;
+    background-color: #F24C27;
+    color: white;
+    height: auto;
+    border-radius: 10px;
+}
+
+.itemDetail .btn:hover{
+    background-color: #a3361d;
+}
+
+.itemDetail .form-control{
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+#buttonaddon1{
+    background-color: #DFDFDF;
+}
+
+#buttonaddon1:hover{
+    background-color: #a0a0a0;
+}
+
+.paymenDetail{
+    display: flex;
+    flex-direction: column;
+    padding-right: 5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-family: 'Sora',sans-serif;
+}
+
+.paymentDelivery{
+    background-color: #DFDFDF;
+    border-radius: 10px;
+    padding: 1.5em;
+    margin-bottom: 1.2em;
+}
+
+.paymentDelivery h2{
+    color: #F24C27;
+    font-size: 24px;
+    padding-right: 10em;
+    font-weight: bolder;
+}
+
+.paymentDelivery .form-control{
+    background-color: #F24C27;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.paymentMethod{
+    background-color: #DFDFDF;
+    border-radius: 10px;
+    padding: 1.5em;
+}
+
+.paymentMethod h2{
+    color: #F24C27;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.paymentMethod .product{
+    color: black;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+#priceProduct{
+    padding-left: 2em;
+}
+
+#priceDelivery{
+    padding-left: 3em;
+}
+
+.paymentMethod .btn{
+    border: none;
+    background-color: #F24C27;
+    height: auto;
+    border-radius: 10px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 2em;
+    font-size: 20px;
+}
+
+.paymentMethod .btn:hover{
+    background-color: #a3361d;
+}
+
+.modal-content{
+    background-color: #DFDFDF;
+}
+
+.modal-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-title{
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.Ovo{
+    background-color: white;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em;
+    padding-bottom: .5em;
+    border-radius: 10px;
+}
+
+.ovoPin{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .1em;
+}
+
+#many{
+    padding-left: 2em;
+}
+
+#ovoCash{
+    font-weight: bold;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 4em;
+    margin-top: 1em;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #F24C27;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #F24C27;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.modal-body .linemodal{
+    width: 50%;
+    height: 3px;
+    background-color: #a0a0a0;
+    margin-left: 25%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.modal-body h3{
+    padding: .2em;
+}
+
+.modal-body .form-control{
+    margin-bottom: .5em;
+}
+
+.modal-body .form-control option{
+    background-color: black;
+    color: white;
+}
+
+.totalBill{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .1em .5em .1em .5em;
+}
+
+.modal-body .btn{
+    border: none;
+    background-color: #F24C27;
+    height: auto;
+    border-radius: 10px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 75%;
+    margin-left: 40%;
+    width: 20%;
+    font-size: 20px;
+}
+
+.modal-body .btn:hover{
+    background-color: #a3361d;
+}
