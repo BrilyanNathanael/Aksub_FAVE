@@ -80,6 +80,8 @@
     padding: 2em 3em;
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
+    margin-top: 3em;
 }
 
 .account-page .account .account-title h2 {
